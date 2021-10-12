@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 
+import { Layout } from './components/Layout';
+
 import { api } from './services/api';
+import { GlobalStyles } from './styles/global';
 
 function App() {
   useEffect(() => {
@@ -8,9 +11,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Manglist</h1>
-    </div>
+    <>
+      <Layout />
+
+      <GlobalStyles />
+    </>
   );
 }
 
