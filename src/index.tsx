@@ -8,7 +8,34 @@ createServer({
     this.namespace = 'api';
 
     this.get('/mangas', () => {
-      return [];
+      return [
+        {
+          id: 1,
+          title: 'Martial Peak',
+          cover: '',
+          ref: [
+            {
+              link: '',
+              language: '',
+            },
+          ],
+          lastReadChapter: 1510,
+          lastChapterReleased: 1510,
+        },
+        {
+          id: 2,
+          title: 'Divine Soul Emperor',
+          cover: '',
+          ref: [
+            {
+              link: '',
+              language: '',
+            },
+          ],
+          lastReadChapter: 139,
+          lastChapterReleased: 139,
+        },
+      ];
     });
   },
 });
